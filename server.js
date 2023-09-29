@@ -4,7 +4,6 @@ const sequelize = require('./config');
 const Profiles = require('./model');
 app.use(express.urlencoded({extended:true}));
 app.post("/",async (req,res)=>{
-    console.log("Jai HO");
     const data =await req.body;
     const key =Object.keys(data)[0];
     const keyJson =await JSON.parse(key);
