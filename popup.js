@@ -35,14 +35,3 @@ for(const profile of profiles){
   await chrome.tabs.remove(tab.id);
 }
 });
-
-const fetching = async()=>{
-  const data = await fetch("http://localhost:4000/",{
-    method:"POST",
-    mode:"no-cors",
-    body:JSON.stringify({
-      name:"Mridul",
-      text:"Gupta"
-    })
-  })
-}
